@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="BlueHill.css">
+    
+</head>
+<body style="margin: auto">
+    
+  <header class="header">
+    <div>
+      <h3>HOTEL BLUE HILL</h3>
+      </div>
+    </header>
+    
+    <aside class="SideBar">
+    <nav>
+        <span><img src="overview.png" id="imgRight"></span>
+    <ul>
+        <li class="finance"> <button onclick="financeView()">Finance
+            <span><img src="whitearrow.png" id="imeageLeft"></span>
+            </button>
+            <ul>
+                <li id="viewListFin1">Income</li> 
+                <li id="viewListFin2">Expenses</li> 
+            </ul>    
+        </li>       
+    </ul>   
+        
+       <span><img src="staff.png" id="imgRight"></span> 
+    <ul>
+        <li class="donation"> <button onclick="donationView()">Employee
+            <span><img src="whitearrow.png" id="imeageLeft"></span>
+            </button>
+            <ul>
+                <li id="viewList1">Add Donation</li> 
+                <li id="viewList2">View Donation</li> 
+            </ul>    
+        </li>    
+    </ul>   
+        
+        <span><img src="customer.png" id="imgRight"></span>
+    <ul>
+        <li><button onclick="staffView()">Customer
+            <span><img src="whitearrow.png" id="imeageLeft"></span>
+            </button>
+            <ul>
+                <li id="viewList3">Add Staff</li> 
+                <li id="viewList4">View Staff</li> 
+            </ul>    
+        </li>    
+    </ul>
+        
+        <span><img src="room.png" id="imgRight"></span>
+    <ul>
+        <li> <button onclick="childView()">Rooms
+            <span><img src="whitearrow.png" id="imeageLeft"></span>
+            </button>
+             
+        </li>    
+    </ul>
+        
+        <span><img src="reports.png" id="imgRight"></span>
+        <ul>
+        <li><button onclick="laborView()">Reports
+            <span><img src="whitearrow.png" id="imeageLeft"></span>
+            </button>
+            <ul>
+                <li id="viewList7">Monthly Revenue</li> 
+                <li id="viewList8">Monthly Income</li> 
+                <li id="viewList9">Monthly Trend</li> 
+                <li id="viewList10">All Expenses</li> 
+                <li id="viewList11">All Income</li> 
+            </ul>    
+        </li>    
+    </ul>
+        
+         <span><img src="whitelogout.png" id="imgRight" style="margin-top: 20px;"></span>
+        <ul class="LogoutBtn">
+           <li><button onclick="logoutEvent()">Log Out</button></li>
+        </ul>
+        
+        
+    </nav>
+    </aside>
+   
+    
+    
+    <script>
+        
+      function financeView(){
+            if((document.getElementById('viewListFin1').style.display)=='block'){
+            document.getElementById('viewListFin1').style.display='none';
+            document.getElementById('viewListFin2').style.display='none'; 
+            }else{
+            document.getElementById('viewListFin1').style.display='block';
+            document.getElementById('viewListFin2').style.display='block';
+        }
+      }
+        
+        
+        
+        function laborView(){
+        if((document.getElementById('viewList7').style.display)=='block'){
+            document.getElementById('viewList7').style.display='none';
+            document.getElementById('viewList8').style.display='none';
+            document.getElementById('viewList9').style.display='none';
+            document.getElementById('viewList10').style.display='none';
+            document.getElementById('viewList11').style.display='none';
+        }else{
+            document.getElementById('viewList7').style.display='block';
+            document.getElementById('viewList8').style.display='block';
+            document.getElementById('viewList9').style.display='block';
+            document.getElementById('viewList10').style.display='block';
+            document.getElementById('viewList11').style.display='block';
+        }
+      }
+        
+      
+    </script>
+    
+</body>
+</html>
